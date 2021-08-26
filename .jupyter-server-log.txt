@@ -26,3 +26,6 @@
 [I 21:11:14.483 NotebookApp] New terminal with automatic name: 1
 TermSocket.open: 1
 TermSocket.open: Opened 1
+[I 21:13:46.990 NotebookApp] Creating new file in /binder
+[I 21:14:06.523 NotebookApp] Saving file at /binder/apt.txt
+[I 21:14:37.005 NotebookApp] Saving file at /binder/apt.txt
