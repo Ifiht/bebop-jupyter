@@ -1,5 +1,5 @@
 {
-  "base_url": "/user/ifiht-bebop-jupyter-mm8p2qo8/",
+  "base_url": "/user/ifiht-bebop-jupyter-odicbkoq/",
   "hostname": "0.0.0.0",
   "notebook_dir": "/home/jovyan",
   "password": false,
@@ -7,6 +7,6 @@
   "port": 8888,
   "secure": false,
   "sock": "",
-  "token": "_wavzXhuQl2NQy6ouYZNXg",
-  "url": "http://0.0.0.0:8888/user/ifiht-bebop-jupyter-mm8p2qo8/"
+  "token": "nQCujDa3RY6Mf2GgdnTzhw",
+  "url": "http://0.0.0.0:8888/user/ifiht-bebop-jupyter-odicbkoq/"
 }

@@ -29,3 +29,333 @@ TermSocket.open: Opened 1
 [I 21:13:46.990 NotebookApp] Creating new file in /binder
 [I 21:14:06.523 NotebookApp] Saving file at /binder/apt.txt
 [I 21:14:37.005 NotebookApp] Saving file at /binder/apt.txt
+[W 2021-08-26 21:40:54.866 LabApp] 'ip' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-08-26 21:40:54.866 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-08-26 21:40:54.866 LabApp] 'base_url' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-08-26 21:40:54.866 LabApp] 'token' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-08-26 21:40:54.866 LabApp] 'trust_xheaders' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-08-26 21:40:54.867 LabApp] 'allow_origin' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-08-26 21:40:54.867 LabApp] 'allow_origin_pat' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-08-26 21:40:54.867 LabApp] 'extra_template_paths' was found in both NotebookApp and ServerApp. This is likely a recent change. This config will only be set in NotebookApp. Please check if you should also config these traits in ServerApp for your purpose.
+[W 2021-08-26 21:40:54.867 LabApp] 'jinja_template_vars' was found in both NotebookApp and ServerApp. This is likely a recent change. This config will only be set in NotebookApp. Please check if you should also config these traits in ServerApp for your purpose.
+[W 2021-08-26 21:40:54.867 LabApp] 'shutdown_no_activity_timeout' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-08-26 21:40:54.868 LabApp] 'tornado_settings' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-08-26 21:40:54.868 LabApp] 'tornado_settings' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2021-08-26 21:40:54.878 LabApp] JupyterLab extension loaded from /srv/conda/envs/notebook/lib/python3.7/site-packages/jupyterlab
+[I 2021-08-26 21:40:54.878 LabApp] JupyterLab application directory is /srv/conda/envs/notebook/share/jupyter/lab
+[I 21:40:54.888 NotebookApp] nteract extension loaded from /srv/conda/envs/notebook/lib/python3.7/site-packages/nteract_on_jupyter
+[I 21:40:54.890 NotebookApp] Will shut down after 600 seconds with no kernels or terminals.
+[I 21:40:54.892 NotebookApp] Serving notebooks from local directory: /home/jovyan
+[I 21:40:54.892 NotebookApp] Jupyter Notebook 6.3.0 is running at:
+[I 21:40:54.892 NotebookApp] http://jupyter-ifiht-2dbebop-2djupyter-2dodicbkoq:8888/user/ifiht-bebop-jupyter-odicbkoq/?token=...
+[I 21:40:54.892 NotebookApp]  or http://127.0.0.1:8888/user/ifiht-bebop-jupyter-odicbkoq/?token=...
+[I 21:40:54.892 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 21:40:54.897 NotebookApp] No web browser found: could not locate runnable browser.
+[I 21:40:58.559 NotebookApp] 302 GET /user/ifiht-bebop-jupyter-odicbkoq/ (10.2.0.37) 1.590000ms
+[I 21:41:01.297 NotebookApp] 302 GET /user/ifiht-bebop-jupyter-odicbkoq/?token=nQCujDa3RY6Mf2GgdnTzhw (141.156.185.248) 0.980000ms
+[I 21:41:14.300 NotebookApp] Creating new notebook in 
+[I 21:41:14.314 NotebookApp] Writing notebook-signing key to /home/jovyan/.local/share/jupyter/notebook_secret
+[I 21:41:16.191 NotebookApp] Kernel started: 083e041e-f32d-431f-830e-eb54aa9323ab, name: python3
+[I 21:41:16.192 NotebookApp] Culling kernels with idle durations > 600 seconds at 60 second intervals ...
+[I 21:41:16.192 NotebookApp] Culling kernels even with connected clients
+[I 21:43:16.281 NotebookApp] Saving file at /Easy_Way_Out.ipynb
+[I 21:43:18.945 NotebookApp] Saving file at /Easy_Way_Out.ipynb
+[W 21:43:27.766 NotebookApp] delete /bebop_make
+[E 21:43:27.768 NotebookApp] Uncaught exception DELETE /user/ifiht-bebop-jupyter-odicbkoq/api/contents/bebop_make (141.156.185.248)
+    HTTPServerRequest(protocol='https', host='hub-binder.mybinder.ovh', method='DELETE', uri='/user/ifiht-bebop-jupyter-odicbkoq/api/contents/bebop_make', version='HTTP/1.1', remote_ip='141.156.185.248')
+    Traceback (most recent call last):
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/tornado/web.py", line 1704, in _execute
+        result = await result
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/tornado/gen.py", line 234, in wrapper
+        yielded = ctx_run(next, result)
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/notebook/services/contents/handlers.py", line 237, in delete
+        yield maybe_future(cm.delete(path))
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/notebook/services/contents/manager.py", line 279, in delete
+        self.delete_file(path)
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/notebook/services/contents/filemanager.py", line 533, in delete_file
+        send2trash(os_path)
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/send2trash/plat_other.py", line 211, in send2trash
+        trash_move(path_b, dest_trash, topdir)
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/send2trash/plat_other.py", line 116, in trash_move
+        os.rename(src, op.join(filespath, destname))
+    OSError: [Errno 18] Invalid cross-device link: b'/home/jovyan/bebop_make' -> b'/home/jovyan/.local/share/Trash/files/bebop_make'
+[W 21:43:27.774 NotebookApp] Unhandled error
+[E 21:43:27.775 NotebookApp] {
+      "Content-Length": "0",
+      "Cookie": "username-hub-binder-mybinder-ovh=\"2|1:0|10:1630014061|32:username-hub-binder-mybinder-ovh|44:MjY3NzZhNzAzNjFiNGE5ZDk5OTUwY2UxZDdjZDM2MmM=|5b54906fd85c3b2f6bc81ba760c2178c6e28a4a339f464d3816e53fb222cc26c\"; _xsrf=2|0913daed|cbfd3fe870fbbce271759fd8c44e596d|1628383876",
+      "Sec-Gpc": "1",
+      "Dnt": "1",
+      "Accept-Language": "en-US,en;q=0.9",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Referer": "https://hub-binder.mybinder.ovh/user/ifiht-bebop-jupyter-odicbkoq/tree",
+      "Sec-Fetch-Dest": "empty",
+      "Sec-Fetch-Mode": "cors",
+      "Sec-Fetch-Site": "same-origin",
+      "Origin": "https://hub-binder.mybinder.ovh",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36 Edg/92.0.902.73",
+      "Sec-Ch-Ua-Mobile": "?0",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|0913daed|cbfd3fe870fbbce271759fd8c44e596d|1628383876",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Sec-Ch-Ua": "\"Chromium\";v=\"92\", \" Not A;Brand\";v=\"99\", \"Microsoft Edge\";v=\"92\"",
+      "X-Scheme": "https",
+      "X-Forwarded-Port": "443,80",
+      "X-Forwarded-Host": "hub-binder.mybinder.ovh",
+      "X-Forwarded-Proto": "https,http",
+      "X-Forwarded-For": "141.156.185.248,::ffff:51.178.95.56",
+      "X-Real-Ip": "141.156.185.248",
+      "X-Request-Id": "51fd4428ff0d4673930eadddd483f0f4",
+      "Host": "hub-binder.mybinder.ovh",
+      "Connection": "close"
+    }
+[E 21:43:27.776 NotebookApp] 500 DELETE /user/ifiht-bebop-jupyter-odicbkoq/api/contents/bebop_make (141.156.185.248) 10.420000ms referer=https://hub-binder.mybinder.ovh/user/ifiht-bebop-jupyter-odicbkoq/tree
+[W 21:43:27.778 NotebookApp] delete /bebop_util
+[E 21:43:27.779 NotebookApp] Uncaught exception DELETE /user/ifiht-bebop-jupyter-odicbkoq/api/contents/bebop_util (141.156.185.248)
+    HTTPServerRequest(protocol='https', host='hub-binder.mybinder.ovh', method='DELETE', uri='/user/ifiht-bebop-jupyter-odicbkoq/api/contents/bebop_util', version='HTTP/1.1', remote_ip='141.156.185.248')
+    Traceback (most recent call last):
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/tornado/web.py", line 1704, in _execute
+        result = await result
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/tornado/gen.py", line 234, in wrapper
+        yielded = ctx_run(next, result)
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/notebook/services/contents/handlers.py", line 237, in delete
+        yield maybe_future(cm.delete(path))
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/notebook/services/contents/manager.py", line 279, in delete
+        self.delete_file(path)
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/notebook/services/contents/filemanager.py", line 533, in delete_file
+        send2trash(os_path)
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/send2trash/plat_other.py", line 211, in send2trash
+        trash_move(path_b, dest_trash, topdir)
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/send2trash/plat_other.py", line 116, in trash_move
+        os.rename(src, op.join(filespath, destname))
+    OSError: [Errno 18] Invalid cross-device link: b'/home/jovyan/bebop_util' -> b'/home/jovyan/.local/share/Trash/files/bebop_util'
+[W 21:43:27.780 NotebookApp] Unhandled error
+[E 21:43:27.781 NotebookApp] {
+      "Content-Length": "0",
+      "Cookie": "username-hub-binder-mybinder-ovh=\"2|1:0|10:1630014061|32:username-hub-binder-mybinder-ovh|44:MjY3NzZhNzAzNjFiNGE5ZDk5OTUwY2UxZDdjZDM2MmM=|5b54906fd85c3b2f6bc81ba760c2178c6e28a4a339f464d3816e53fb222cc26c\"; _xsrf=2|0913daed|cbfd3fe870fbbce271759fd8c44e596d|1628383876",
+      "Sec-Gpc": "1",
+      "Dnt": "1",
+      "Accept-Language": "en-US,en;q=0.9",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Referer": "https://hub-binder.mybinder.ovh/user/ifiht-bebop-jupyter-odicbkoq/tree",
+      "Sec-Fetch-Dest": "empty",
+      "Sec-Fetch-Mode": "cors",
+      "Sec-Fetch-Site": "same-origin",
+      "Origin": "https://hub-binder.mybinder.ovh",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36 Edg/92.0.902.73",
+      "Sec-Ch-Ua-Mobile": "?0",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|0913daed|cbfd3fe870fbbce271759fd8c44e596d|1628383876",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Sec-Ch-Ua": "\"Chromium\";v=\"92\", \" Not A;Brand\";v=\"99\", \"Microsoft Edge\";v=\"92\"",
+      "X-Scheme": "https",
+      "X-Forwarded-Port": "443,80",
+      "X-Forwarded-Host": "hub-binder.mybinder.ovh",
+      "X-Forwarded-Proto": "https,http",
+      "X-Forwarded-For": "141.156.185.248,::ffff:51.178.95.56",
+      "X-Real-Ip": "141.156.185.248",
+      "X-Request-Id": "97d57b8f10b1374688d695048fb168ae",
+      "Host": "hub-binder.mybinder.ovh",
+      "Connection": "close"
+    }
+[E 21:43:27.781 NotebookApp] 500 DELETE /user/ifiht-bebop-jupyter-odicbkoq/api/contents/bebop_util (141.156.185.248) 4.320000ms referer=https://hub-binder.mybinder.ovh/user/ifiht-bebop-jupyter-odicbkoq/tree
+[W 21:43:27.782 NotebookApp] delete /sparse_matrix_converter
+[E 21:43:27.782 NotebookApp] Uncaught exception DELETE /user/ifiht-bebop-jupyter-odicbkoq/api/contents/sparse_matrix_converter (141.156.185.248)
+    HTTPServerRequest(protocol='https', host='hub-binder.mybinder.ovh', method='DELETE', uri='/user/ifiht-bebop-jupyter-odicbkoq/api/contents/sparse_matrix_converter', version='HTTP/1.1', remote_ip='141.156.185.248')
+    Traceback (most recent call last):
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/tornado/web.py", line 1704, in _execute
+        result = await result
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/tornado/gen.py", line 234, in wrapper
+        yielded = ctx_run(next, result)
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/notebook/services/contents/handlers.py", line 237, in delete
+        yield maybe_future(cm.delete(path))
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/notebook/services/contents/manager.py", line 279, in delete
+        self.delete_file(path)
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/notebook/services/contents/filemanager.py", line 533, in delete_file
+        send2trash(os_path)
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/send2trash/plat_other.py", line 211, in send2trash
+        trash_move(path_b, dest_trash, topdir)
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/send2trash/plat_other.py", line 116, in trash_move
+        os.rename(src, op.join(filespath, destname))
+    OSError: [Errno 18] Invalid cross-device link: b'/home/jovyan/sparse_matrix_converter' -> b'/home/jovyan/.local/share/Trash/files/sparse_matrix_converter'
+[W 21:43:27.783 NotebookApp] Unhandled error
+[E 21:43:27.784 NotebookApp] {
+      "Content-Length": "0",
+      "Cookie": "username-hub-binder-mybinder-ovh=\"2|1:0|10:1630014061|32:username-hub-binder-mybinder-ovh|44:MjY3NzZhNzAzNjFiNGE5ZDk5OTUwY2UxZDdjZDM2MmM=|5b54906fd85c3b2f6bc81ba760c2178c6e28a4a339f464d3816e53fb222cc26c\"; _xsrf=2|0913daed|cbfd3fe870fbbce271759fd8c44e596d|1628383876",
+      "Sec-Gpc": "1",
+      "Dnt": "1",
+      "Accept-Language": "en-US,en;q=0.9",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Referer": "https://hub-binder.mybinder.ovh/user/ifiht-bebop-jupyter-odicbkoq/tree",
+      "Sec-Fetch-Dest": "empty",
+      "Sec-Fetch-Mode": "cors",
+      "Sec-Fetch-Site": "same-origin",
+      "Origin": "https://hub-binder.mybinder.ovh",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36 Edg/92.0.902.73",
+      "Sec-Ch-Ua-Mobile": "?0",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|0913daed|cbfd3fe870fbbce271759fd8c44e596d|1628383876",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Sec-Ch-Ua": "\"Chromium\";v=\"92\", \" Not A;Brand\";v=\"99\", \"Microsoft Edge\";v=\"92\"",
+      "X-Scheme": "https",
+      "X-Forwarded-Port": "443,80",
+      "X-Forwarded-Host": "hub-binder.mybinder.ovh",
+      "X-Forwarded-Proto": "https,http",
+      "X-Forwarded-For": "141.156.185.248,::ffff:51.178.95.56",
+      "X-Real-Ip": "141.156.185.248",
+      "X-Request-Id": "b023f2f6dfa4f4ff7c6a2d979fa87711",
+      "Host": "hub-binder.mybinder.ovh",
+      "Connection": "close"
+    }
+[E 21:43:27.784 NotebookApp] 500 DELETE /user/ifiht-bebop-jupyter-odicbkoq/api/contents/sparse_matrix_converter (141.156.185.248) 6.850000ms referer=https://hub-binder.mybinder.ovh/user/ifiht-bebop-jupyter-odicbkoq/tree
+[W 21:43:37.936 NotebookApp] delete /bebop_make
+[E 21:43:37.937 NotebookApp] Uncaught exception DELETE /user/ifiht-bebop-jupyter-odicbkoq/api/contents/bebop_make (141.156.185.248)
+    HTTPServerRequest(protocol='https', host='hub-binder.mybinder.ovh', method='DELETE', uri='/user/ifiht-bebop-jupyter-odicbkoq/api/contents/bebop_make', version='HTTP/1.1', remote_ip='141.156.185.248')
+    Traceback (most recent call last):
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/tornado/web.py", line 1704, in _execute
+        result = await result
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/tornado/gen.py", line 234, in wrapper
+        yielded = ctx_run(next, result)
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/notebook/services/contents/handlers.py", line 237, in delete
+        yield maybe_future(cm.delete(path))
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/notebook/services/contents/manager.py", line 279, in delete
+        self.delete_file(path)
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/notebook/services/contents/filemanager.py", line 533, in delete_file
+        send2trash(os_path)
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/send2trash/plat_other.py", line 211, in send2trash
+        trash_move(path_b, dest_trash, topdir)
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/send2trash/plat_other.py", line 116, in trash_move
+        os.rename(src, op.join(filespath, destname))
+    OSError: [Errno 18] Invalid cross-device link: b'/home/jovyan/bebop_make' -> b'/home/jovyan/.local/share/Trash/files/bebop_make 1'
+[W 21:43:37.938 NotebookApp] Unhandled error
+[E 21:43:37.939 NotebookApp] {
+      "Content-Length": "0",
+      "Cookie": "username-hub-binder-mybinder-ovh=\"2|1:0|10:1630014061|32:username-hub-binder-mybinder-ovh|44:MjY3NzZhNzAzNjFiNGE5ZDk5OTUwY2UxZDdjZDM2MmM=|5b54906fd85c3b2f6bc81ba760c2178c6e28a4a339f464d3816e53fb222cc26c\"; _xsrf=2|0913daed|cbfd3fe870fbbce271759fd8c44e596d|1628383876",
+      "Sec-Gpc": "1",
+      "Dnt": "1",
+      "Accept-Language": "en-US,en;q=0.9",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Referer": "https://hub-binder.mybinder.ovh/user/ifiht-bebop-jupyter-odicbkoq/tree",
+      "Sec-Fetch-Dest": "empty",
+      "Sec-Fetch-Mode": "cors",
+      "Sec-Fetch-Site": "same-origin",
+      "Origin": "https://hub-binder.mybinder.ovh",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36 Edg/92.0.902.73",
+      "Sec-Ch-Ua-Mobile": "?0",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|0913daed|cbfd3fe870fbbce271759fd8c44e596d|1628383876",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Sec-Ch-Ua": "\"Chromium\";v=\"92\", \" Not A;Brand\";v=\"99\", \"Microsoft Edge\";v=\"92\"",
+      "X-Scheme": "https",
+      "X-Forwarded-Port": "443,80",
+      "X-Forwarded-Host": "hub-binder.mybinder.ovh",
+      "X-Forwarded-Proto": "https,http",
+      "X-Forwarded-For": "141.156.185.248,::ffff:51.178.95.56",
+      "X-Real-Ip": "141.156.185.248",
+      "X-Request-Id": "6717fbfafcf0196fe4fbefbc188935fe",
+      "Host": "hub-binder.mybinder.ovh",
+      "Connection": "close"
+    }
+[E 21:43:37.939 NotebookApp] 500 DELETE /user/ifiht-bebop-jupyter-odicbkoq/api/contents/bebop_make (141.156.185.248) 2.970000ms referer=https://hub-binder.mybinder.ovh/user/ifiht-bebop-jupyter-odicbkoq/tree
+[W 21:43:37.941 NotebookApp] delete /bebop_util
+[E 21:43:37.941 NotebookApp] Uncaught exception DELETE /user/ifiht-bebop-jupyter-odicbkoq/api/contents/bebop_util (141.156.185.248)
+    HTTPServerRequest(protocol='https', host='hub-binder.mybinder.ovh', method='DELETE', uri='/user/ifiht-bebop-jupyter-odicbkoq/api/contents/bebop_util', version='HTTP/1.1', remote_ip='141.156.185.248')
+    Traceback (most recent call last):
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/tornado/web.py", line 1704, in _execute
+        result = await result
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/tornado/gen.py", line 234, in wrapper
+        yielded = ctx_run(next, result)
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/notebook/services/contents/handlers.py", line 237, in delete
+        yield maybe_future(cm.delete(path))
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/notebook/services/contents/manager.py", line 279, in delete
+        self.delete_file(path)
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/notebook/services/contents/filemanager.py", line 533, in delete_file
+        send2trash(os_path)
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/send2trash/plat_other.py", line 211, in send2trash
+        trash_move(path_b, dest_trash, topdir)
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/send2trash/plat_other.py", line 116, in trash_move
+        os.rename(src, op.join(filespath, destname))
+    OSError: [Errno 18] Invalid cross-device link: b'/home/jovyan/bebop_util' -> b'/home/jovyan/.local/share/Trash/files/bebop_util 1'
+[W 21:43:37.942 NotebookApp] Unhandled error
+[E 21:43:37.942 NotebookApp] {
+      "Content-Length": "0",
+      "Cookie": "username-hub-binder-mybinder-ovh=\"2|1:0|10:1630014061|32:username-hub-binder-mybinder-ovh|44:MjY3NzZhNzAzNjFiNGE5ZDk5OTUwY2UxZDdjZDM2MmM=|5b54906fd85c3b2f6bc81ba760c2178c6e28a4a339f464d3816e53fb222cc26c\"; _xsrf=2|0913daed|cbfd3fe870fbbce271759fd8c44e596d|1628383876",
+      "Sec-Gpc": "1",
+      "Dnt": "1",
+      "Accept-Language": "en-US,en;q=0.9",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Referer": "https://hub-binder.mybinder.ovh/user/ifiht-bebop-jupyter-odicbkoq/tree",
+      "Sec-Fetch-Dest": "empty",
+      "Sec-Fetch-Mode": "cors",
+      "Sec-Fetch-Site": "same-origin",
+      "Origin": "https://hub-binder.mybinder.ovh",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36 Edg/92.0.902.73",
+      "Sec-Ch-Ua-Mobile": "?0",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|0913daed|cbfd3fe870fbbce271759fd8c44e596d|1628383876",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Sec-Ch-Ua": "\"Chromium\";v=\"92\", \" Not A;Brand\";v=\"99\", \"Microsoft Edge\";v=\"92\"",
+      "X-Scheme": "https",
+      "X-Forwarded-Port": "443,80",
+      "X-Forwarded-Host": "hub-binder.mybinder.ovh",
+      "X-Forwarded-Proto": "https,http",
+      "X-Forwarded-For": "141.156.185.248,::ffff:51.178.95.56",
+      "X-Real-Ip": "141.156.185.248",
+      "X-Request-Id": "ef239a60318781e1360cf662daa71c73",
+      "Host": "hub-binder.mybinder.ovh",
+      "Connection": "close"
+    }
+[E 21:43:37.942 NotebookApp] 500 DELETE /user/ifiht-bebop-jupyter-odicbkoq/api/contents/bebop_util (141.156.185.248) 2.700000ms referer=https://hub-binder.mybinder.ovh/user/ifiht-bebop-jupyter-odicbkoq/tree
+[W 21:43:37.943 NotebookApp] delete /sparse_matrix_converter
+[E 21:43:37.943 NotebookApp] Uncaught exception DELETE /user/ifiht-bebop-jupyter-odicbkoq/api/contents/sparse_matrix_converter (141.156.185.248)
+    HTTPServerRequest(protocol='https', host='hub-binder.mybinder.ovh', method='DELETE', uri='/user/ifiht-bebop-jupyter-odicbkoq/api/contents/sparse_matrix_converter', version='HTTP/1.1', remote_ip='141.156.185.248')
+    Traceback (most recent call last):
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/tornado/web.py", line 1704, in _execute
+        result = await result
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/tornado/gen.py", line 234, in wrapper
+        yielded = ctx_run(next, result)
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/notebook/services/contents/handlers.py", line 237, in delete
+        yield maybe_future(cm.delete(path))
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/notebook/services/contents/manager.py", line 279, in delete
+        self.delete_file(path)
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/notebook/services/contents/filemanager.py", line 533, in delete_file
+        send2trash(os_path)
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/send2trash/plat_other.py", line 211, in send2trash
+        trash_move(path_b, dest_trash, topdir)
+      File "/srv/conda/envs/notebook/lib/python3.7/site-packages/send2trash/plat_other.py", line 116, in trash_move
+        os.rename(src, op.join(filespath, destname))
+    OSError: [Errno 18] Invalid cross-device link: b'/home/jovyan/sparse_matrix_converter' -> b'/home/jovyan/.local/share/Trash/files/sparse_matrix_converter 1'
+[W 21:43:37.944 NotebookApp] Unhandled error
+[E 21:43:37.944 NotebookApp] {
+      "Content-Length": "0",
+      "Cookie": "username-hub-binder-mybinder-ovh=\"2|1:0|10:1630014061|32:username-hub-binder-mybinder-ovh|44:MjY3NzZhNzAzNjFiNGE5ZDk5OTUwY2UxZDdjZDM2MmM=|5b54906fd85c3b2f6bc81ba760c2178c6e28a4a339f464d3816e53fb222cc26c\"; _xsrf=2|0913daed|cbfd3fe870fbbce271759fd8c44e596d|1628383876",
+      "Sec-Gpc": "1",
+      "Dnt": "1",
+      "Accept-Language": "en-US,en;q=0.9",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Referer": "https://hub-binder.mybinder.ovh/user/ifiht-bebop-jupyter-odicbkoq/tree",
+      "Sec-Fetch-Dest": "empty",
+      "Sec-Fetch-Mode": "cors",
+      "Sec-Fetch-Site": "same-origin",
+      "Origin": "https://hub-binder.mybinder.ovh",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36 Edg/92.0.902.73",
+      "Sec-Ch-Ua-Mobile": "?0",
+      "X-Requested-With": "XMLHttpRequest",
+      "X-Xsrftoken": "2|0913daed|cbfd3fe870fbbce271759fd8c44e596d|1628383876",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Sec-Ch-Ua": "\"Chromium\";v=\"92\", \" Not A;Brand\";v=\"99\", \"Microsoft Edge\";v=\"92\"",
+      "X-Scheme": "https",
+      "X-Forwarded-Port": "443,80",
+      "X-Forwarded-Host": "hub-binder.mybinder.ovh",
+      "X-Forwarded-Proto": "https,http",
+      "X-Forwarded-For": "141.156.185.248,::ffff:51.178.95.56",
+      "X-Real-Ip": "141.156.185.248",
+      "X-Request-Id": "27f38d9a3c95b93fe4df152fe576d9e3",
+      "Host": "hub-binder.mybinder.ovh",
+      "Connection": "close"
+    }
+[E 21:43:37.945 NotebookApp] 500 DELETE /user/ifiht-bebop-jupyter-odicbkoq/api/contents/sparse_matrix_converter (141.156.185.248) 4.300000ms referer=https://hub-binder.mybinder.ovh/user/ifiht-bebop-jupyter-odicbkoq/tree
+[I 21:43:49.180 NotebookApp] Saving file at /Easy_Way_Out.ipynb
+[I 21:43:50.316 NotebookApp] Starting buffering for 083e041e-f32d-431f-830e-eb54aa9323ab:5749e8241767458d80c8d277812f4b25
+[I 21:43:54.231 NotebookApp] New terminal with automatic name: 1
+TermSocket.open: 1
+TermSocket.open: Opened 1
